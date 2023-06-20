@@ -8,7 +8,7 @@ client = MongoClient(url)
 pytech = client.pytech
 students = pytech.students
 
-# display all documents in the collection
+
 docs = students.find()
 
 print ("-- DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY --")
