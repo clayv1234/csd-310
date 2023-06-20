@@ -8,10 +8,9 @@ client = MongoClient(url)
 # pytech database
 pytech = client.pytech
 
-# students collection
+
 students = pytech.students
 
-# display all documents in the collection
 docs = students.find()
 
 print ("-- DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY --")
@@ -25,8 +24,8 @@ for doc in docs:
 #new student info
 new_student = {
         "student_id": "1010",
-        "first_name": "John",
-        "last_name": "Doe"
+        "first_name": "Jack",
+        "last_name": "Johnson"
     }
 
 # insert new student
@@ -50,7 +49,7 @@ print ()
 # #delete student 1010
 doc=students.delete_one({"student_id": "1010"})
 
-# display all documents in the collection
+
 docs = students.find()
 
 print ("-- DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY --")
