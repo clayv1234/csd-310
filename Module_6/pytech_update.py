@@ -2,7 +2,7 @@
 
 # Get the database instance
 from pymongo import MongoClient
-url = "mongodb+srv://admin:admin@cluster0.4a5dn1t.mongodb.net/?retryWrites=true&w=majority"
+url = "mongodb+srv://admin:admin@cluster0.ympg28b.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(url)
 
 pytech = client.pytech
