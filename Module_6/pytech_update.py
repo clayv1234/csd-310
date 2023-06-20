@@ -1,4 +1,7 @@
 #pytech_update
+#Clay Vineyard
+#Bellevue University
+#CYBR-410
 
 # Get the database instance
 from pymongo import MongoClient
