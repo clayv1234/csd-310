@@ -25,7 +25,7 @@ for doc in docs:
 
 
 #update student_id 1007
-students.update_one({"student_id": "1007"}, {"$set": {"last_name": "Thomas" }})
+students.update_one({"student_id": "1007"}, {"$set": {"last_name": "Smith" }})
 
 #find student_id 1007
 doc = students.find_one({"student_id": "1007"})
